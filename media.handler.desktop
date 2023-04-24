@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Exec=python3 ~/.media-handler/listener.py
+Categories=Utility;
