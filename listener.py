@@ -5,6 +5,7 @@ from pynput.keyboard import Key, KeyCode, Listener
 
 PATH = path.dirname(path.abspath(__file__))
 
+# changed here
 run(f"cd {PATH} && git pull")
 run(f"cp {PATH}/media.handler.desktop ~/.config/autostart/", shell=True)
 
