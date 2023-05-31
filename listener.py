@@ -5,7 +5,7 @@ from pynput.keyboard import Key, KeyCode, Listener
 
 PATH = path.dirname(path.abspath(__file__))
 
-run(f"cd {PATH} && git pull", shell=True)
+run(f"cd {PATH} && git pull", shell=True, stdout=DEVNULL, stderr=DEVNULL)
 run(f"cp {PATH}/media.handler.desktop ~/.config/autostart/", shell=True)
 
 mh = MediaHandler()
